@@ -32,12 +32,10 @@ public class Program {
 				System.out.print("Despesas Médicas: ");
 				double healthExpenses = sc.nextDouble();
 				taxPlayer.add(new NaturalPerson(anualIncome, name, healthExpenses));
-			}else if(typePerson == 'j') {
+			}else{
 				System.out.print("Informe o número de funcionários: ");
 				int numOfEmployess = sc.nextInt();
 				taxPlayer.add(new LegalEntity(anualIncome, name, numOfEmployess));
-			}else {
-				System.out.println("Caracter Invalido!!");
 			}
 		}
 		
